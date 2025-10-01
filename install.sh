@@ -34,7 +34,7 @@ detect_os
 bblue "1) Обновление пакетов и установка зависимостей..."
 export DEBIAN_FRONTEND=noninteractive
 apt-get update -y
-apt-get install -y curl ca-certificates gnupg lsb-release jq qrencode nodejs npm
+apt-get install -y curl ca-certificates gnupg lsb-release jq qrencode nodejs npm cron
 if ! command -v script >/dev/null 2>&1; then
   apt-get install -y util-linux || true
 fi
